@@ -13,6 +13,10 @@ function easyProblem1(memberRank, age) {
     // TODO: Write your code here
     // Use === to check if memberRank equals "Commodore" AND age equals 21
     // Return "can access" if true, otherwise "go home"
+    if (memberRank === "Commodore" && age === 21)
+    {return "can access"}
+    else {return "go home "}
+
 }
 
 // Test your code:
@@ -28,6 +32,9 @@ function easyProblem2(memberRank, age) {
     // TODO: Write your code here
     // Check if age is 21 AND memberRank is NOT "Commodore"
     // Return "can sign in" if true, otherwise "go home"
+      if (memberRank !== "Commodore" && age === 21)
+    {return "can sign in "}
+    else {return "go home "} 
 }
 
 // Test your code:
@@ -44,7 +51,14 @@ function mediumProblem(memberRank, age) {
     // Use if-else if-else with && operator
     // Make sure to check all three conditions correctly
     // Remember: && means BOTH conditions must be true
+   if ( memberRank === "Commodore" && age === 21 )
+    {return "can access"}
+   
+     else if ( age === 21 && memberRank!== "commodore")
+    {return " can sign in "}
+    else {return "go home "}
 }
+
 
 // Test your code:
 console.log("Medium - Test 1:", mediumProblem("Commodore", 21)); // Should print: "can access"
@@ -66,6 +80,13 @@ function hardProblem(memberRank, age) {
     //   - If age is NOT 21:
     //     - Return "go home"
     // Use nested if-else statements!
+       if (age === 21 )
+      if ( memberRank === "Commodore")
+    {return "can access"}
+   
+     else if ( age === 21 && memberRank !== "Commmodore")
+    {return " can sign in "}
+    else {return "go home "}
 }
 
 // Test your code:

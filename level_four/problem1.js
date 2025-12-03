@@ -13,6 +13,9 @@ function easyProblem1(patronLevel, age) {
     // TODO: Write your code here
     // If patronLevel is "Collector" AND age is 21, return "can access"
     // Otherwise, return "go home"
+    if (patronLevel === "Collector" && age === 21)
+    {return "can access";}
+    else {return "go home";}
 }
 
 // Test your code:
@@ -28,6 +31,9 @@ function easyProblem2(patronLevel, age) {
     // TODO: Write your code here
     // If age is 21 AND patronLevel is NOT "Collector", return "can sign in"
     // Otherwise, return "go home"
+    if (age === 21 && patronLevel !== "Collector")
+    {return "can sign in";}
+    else { return "go home"; }
 }
 
 // Test your code:
@@ -45,6 +51,12 @@ function mediumProblem(patronLevel, age) {
     // 1. patronLevel === "Collector" && age === 21 → "can access"
     // 2. age === 21 && patronLevel !== "Collector" → "can sign in"
     // 3. Everything else → "go home"
+    if (patronLevel === "Collector" && age === 21)
+    {return "can access";}
+    else if (age === 21 && patronLevel !== "Collector")
+    {return "can sign in";}
+    else { return "go home"; }
+
 }
 
 // Test your code:
@@ -65,6 +77,12 @@ function hardProblem(patronLevel, age) {
     //     - If patronLevel is NOT "Collector" → return "can sign in"
     //   - If age is NOT 21 → return "go home"
     // Use nested if statements!
+    if ( age === 21 ) 
+ {       if (patronLevel === "Collector")
+        {return "can access";}
+        else if (patronLevel !== "Collector")
+        {return "can sign in";} }
+         else {return "go home";}
 }
 
 // Test your code:

@@ -11,8 +11,10 @@
 // Hint: Just check one condition at a time
 function easyProblem1(memberTier, age) {
     // TODO: Write your code here
-    // If memberTier is "Executive" AND age is 18, return "can access"
-    // Otherwise return "go home"
+    // If memberTier is "Executive" 
+    if (memberTier === "Executive ")
+    {return "can sighn in"}
+    else { "go home"}
 }
 
 // Test your code:
@@ -28,6 +30,9 @@ function easyProblem2(memberTier, age) {
     // TODO: Write your code here
     // If age is 18 AND memberTier is NOT "Executive", return "can sign in"
     // Otherwise return "go home"
+    if ( memberTier !== "Executive" && age === 18) 
+     {return "can sign in "}
+    else {"go home"}
 }
 
 // Test your code:
@@ -46,6 +51,11 @@ function mediumProblem(memberTier, age) {
     // 1. First check: memberTier === "Executive" && age === 18 → "can access"
     // 2. Second check: age === 18 && memberTier !== "Executive" → "can sign in"
     // 3. Everything else → "go home"
+    if ( memberTier === "Excutive" && age === 18)
+    {return "can access"}
+    else if (age === 18 && memberTier !== Excutive )
+    {return "can sign in"}
+    else {return "go home"}
 }
 
 // Test your code:
@@ -60,18 +70,17 @@ console.log("Medium - Test 4:", mediumProblem("VIP", 22)); // Should print: "go 
 // Task: Use nested if statements with multiple levels
 // Hint: First check age, then check memberTier inside
 function hardProblem(memberTier, age) {
-    // TODO: Write your code here
-    // Structure your code like this:
-    // if (age is 18) {
-    //     if (memberTier is "Executive") {
-    //         return "can access"
-    //     } else {
-    //         return "can sign in"
-    //     }
-    // } else {
-    //     return "go home"
-    // }
-}
+   
+    if (age === 18) {
+        if (memberTier === "Executive") {
+            return "can access"
+        } else if (memberTier !== "Executive"){
+            return "can sign in"
+        }
+    } else {
+        return "go home"
+    }
+}                    
 
 // Test your code:
 console.log("Hard - Test 1:", hardProblem("Executive", 18)); // Should print: "can access"

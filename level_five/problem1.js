@@ -13,7 +13,11 @@ function easyProblem1(guestStatus, age) {
     // TODO: Write your code here
     // If guestStatus is "Connoisseur" AND age is 21, return "can access"
     // Otherwise, return "go home"
+    if ( guestStatus === "Connoisseur" && age === 21 )
+    {return "can access"}
+    else { return "go home "}
 }
+
 
 // Test your code:
 console.log("Easy 1 - Test 1:", easyProblem1("Connoisseur", 21)); // Should print: "can access"
@@ -27,7 +31,10 @@ console.log("Easy 1 - Test 2:", easyProblem1("Connoisseur", 20)); // Should prin
 function easyProblem2(guestStatus, age) {
     // TODO: Write your code here
     // If age is 21 AND guestStatus is NOT "Connoisseur", return "can sign in"
-    // Otherwise, return "go home"
+    // Otherwise, return "go home"\
+    if ( guestStatus !== "Conniseur" && age === 21 )
+    {return "can sign in"}
+    else { return "go home "}
 }
 
 // Test your code:
@@ -45,6 +52,12 @@ function mediumProblem(guestStatus, age) {
     // 1. guestStatus === "Connoisseur" && age === 21 → "can access"
     // 2. age === 21 && guestStatus !== "Connoisseur" → "can sign in"
     // 3. Everything else → "go home"
+      if ( guestStatus=== "Conniseur" && age === 21  )
+    {return "can access"}
+   
+     else if ( age === 21 && guestStatus!== " Connisseur")
+    {return " can sign in "}
+    else {return "go home "}                                              
 }
 
 // Test your code:
@@ -65,6 +78,13 @@ function hardProblem(guestStatus, age) {
     //     - If guestStatus is NOT "Connoisseur" → return "can sign in"
     //   - If age is NOT 21 → return "go home"
     // Use nested if statements!
+      if (age === 21 )
+      if ( guestStatus === "Conniseur")
+    {return "can access"}
+   
+     else if ( age === 18 && guestStatus !== "Conniseur")
+    {return " can sign in "}
+    else {return "go home "}
 }
 
 // Test your code:
